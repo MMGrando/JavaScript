@@ -1,0 +1,237 @@
+body {
+    background-color: #020911;
+}
+header {
+    h1 {
+        color: #fcf8eb;
+        font: Bold 32pt montserrat;
+        text-align: center;
+    }
+}
+section {
+    /*background: #fcf8eb;
+    color: #039faa;
+    border-radius: 2px;
+    padding: 2px;
+    width: 480px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #fcf8eb;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+}
+input[type='number'] {
+    background-color: #020911;
+    color: #fcf8eb;
+    width: 40px;
+}
+div input[type='number']::-webkit-inner-spin-button, 
+div input[type='number']::-webkit-outer-spin-button{-webkit-appearance: none; margin: 0;}
+div {
+    text-align: center;
+    padding: 0px;    
+    
+}
+footer {
+    color: #039faa;
+    text-align: center;
+    font-style: italic;
+}
+.wrapper{
+    background: #fcf8eb;
+    color: #039faa;
+    border-radius: 2px;
+    padding: 2px;
+    width: 480px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #fcf8eb;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 1px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.wrapper1{
+    background: #fcf8eb;
+    color: #039faa;
+    border-radius: 2px;
+    padding: 2px;
+    width: 480px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #fcf8eb;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 1px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.wrapper2{
+    background: #fcf8eb;
+    color: #039faa;
+    border-radius: 2px;
+    padding: 2px;
+    width: 480px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #fcf8eb;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 1px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.wrapper3{
+    background: #fcf8eb;
+    color: #039faa;
+    border-radius: 2px;
+    padding: 2px;
+    width: 480px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #fcf8eb;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 1px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.wrapper4{
+    background: #fcf8eb;
+    color: #039faa;
+    border-radius: 2px;
+    padding: 2px;
+    width: 480px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #fcf8eb;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 1px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.wrapper5{
+    background: #fcf8eb;
+    color: #039faa;
+    border-radius: 2px;
+    padding: 2px;
+    width: 480px;
+    height: 250px;
+    margin: auto;
+    box-shadow: 0px 0px 7px #fcf8eb;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 1px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#intro{
+    font: bold 16pt montserrat;
+    line-height: 10px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+#interagir{
+    font: bold 16pt montserrat;
+    padding-left: 30px;
+    line-height: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#result0{
+    
+    font: italic 12pt montserrat;
+    line-height: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#result1{
+    
+    font: italic 12pt montserrat;
+    line-height: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#result2{
+    
+    font: italic 12pt montserrat;
+    line-height: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#result3{
+    
+    font: italic 12pt montserrat;
+    line-height: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#result4{
+    
+    font: italic 12pt montserrat;
+    line-height: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#result5{
+    
+    font: italic 12pt montserrat;
+    line-height: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

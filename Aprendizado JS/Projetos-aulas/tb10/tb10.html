@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo simples para aula.</title>
+    <link rel="stylesheet" href="tb10.css">
+</head>
+<body>
+    <header>
+        <h1>Área de calcular áreas!</h1>
+    </header>
+    <section class="sectiongrid">
+        <div class="wrapper">
+            <div id="intro">
+                <p>Calcular área do trapézio:</p>
+            </div>
+            <div id="interagir">
+                <p id="p0">  
+                    <p>b: <input type="number" name="primeiroValor" id="primeiroValor"></p>
+                    <p>B: <input type="number" name="segundoValor" id="segundoValor"></p>
+                    <p>h: <input type="number" name="terceiroValor" id="terceiroValor"></p>
+                    <input type="button" value="Calcular" onclick="areaTrapezio()">
+                </p>
+            </div>
+            <div id="result0">
+                <img src="1trapezio.png" alt="trapezio"><br><br>
+                Preencha à esquerda para <br><br> calcular a área desejada!
+            </div>
+        </div>
+
+        <div class="wrapper1">
+            <div id="intro">
+                <p>Calcular área do círculo:</p>
+            </div>
+            <div id="interagir">
+                <p id="p1">  
+                    <p>r: <input type="number" name="valorDoRaio" id="valorDoRaio"></p>
+                    <input type="button" value="Calcular" onclick="areaBola()">
+                </p>
+            </div>
+            <div id="result1">
+                <img src="2raioBola.png" alt="circulo"><br><br>
+                Preencha à esquerda para <br><br> calcular a área desejada!
+            </div>
+        </div>
+
+        <div class="wrapper2">
+            <div id="intro">
+                <p>Calcular área do triângulo:</p>
+            </div>
+            <div id="interagir">
+                <p id="p2">  
+                    <p>b: <input type="number" name="baseTriangulo" id="baseTriangulo"></p>
+                    <p>h: <input type="number" name="alturaTriangulo" id="alturaTriangulo"></p>
+                    <input type="button" value="Calcular" onclick="triangulo()">
+                </p>
+            </div>
+            <div id="result2">
+                <img src="3triangulo.png" alt="triangulo"><br><br>
+                Preencha à esquerda para <br><br> calcular a area desejada!
+            </div>
+        </div>
+
+        <div class="wrapper3">
+            <div id="intro">
+                <p>Calcular área do paralelogramo:</p>
+            </div>
+            <div id="interagir">
+                <p id="p3">  
+                    <p>b: <input type="number" name="paraleloBase" id="paraleloBase"></p>
+                    <p>h: <input type="number" name="paraleloAltura" id="paraleloAltura"></p>
+                    <input type="button" value="Calcular" onclick="paralelogramo()">
+                </p>
+            </div>
+            <div id="result3">
+                <img src="4paralelo.png" alt="paralelogramo"><br><br>
+                Preencha à esquerda para <br><br> calcular a area desejada!
+            </div>
+        </div>
+
+        <div class="wrapper4">
+            <div id="intro">
+                <p>Calcular área do losango:</p>
+            </div>
+            <div id="interagir">
+                <p id="p4">  
+                    <p>d: <input type="number" name="losangoDiagonal1" id="losangoDiagonal1"></p>
+                    <p>D: <input type="number" name="losangoDiagonal2" id="losangoDiagonal2"></p>
+                    <input type="button" value="Calcular" onclick="losango()">
+                </p>
+            </div>
+            <div id="result4">
+                <img src="5losango.png" alt="losango"><br><br>
+                Preencha à esquerda para <br><br> calcular a área desejada!
+            </div>
+        </div>
+
+        <div class="wrapper5">
+            <div id="intro">
+                <p>Calcular área do retângulo:</p>
+            </div>
+            <div id="interagir">
+                <p id="p5">  
+                    <p>w: <input type="number" name="retanguloLargura" id="retanguloLargura"></p>
+                    <p>L: <input type="number" name="retanguloAltura" id="retanguloAltura"></p>
+                    <input type="button" value="Calcular" onclick="retangulo()">
+                </p>
+            </div>
+            <div id="result5">
+                <img src="6retangulo.png" alt="retangulo"><br><br>
+                Preencha à esquerda para <br><br> calcular a area desejada!
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;MarcosGrando</p>
+    </footer>
+    <script src="tb10-trapezio.js"></script>
+    <script src="tb10-circulo.js"></script>
+    <script src="tb10-triangulo.js"></script>
+    <script src="tb10-paralelogramo.js"></script>
+    <script src="tb10-losango.js"></script>
+    <script src="tb10-retangulo.js"></script>
+
+</body>
+</html>

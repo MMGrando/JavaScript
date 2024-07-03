@@ -1,0 +1,89 @@
+REPETIÇÕES 
+    Em toda linguagem de programação há laços (ou estruturas) de repetições que oferecem uma maneira
+    prática de executar uma ação repetidas vezes. Existem vários tipos de laços/estruturas que
+    oferecem formas diferentes de determinar seu início ou fim. Mas, essencialmente, todos
+    eles fazem a mesma coisa: repetições de um bloco de códigos.
+        Nas diversas estruturas de repetições, temos: 
+            for; do...while; while; label; break; continue; for...in; for...off;
+        
+{-- while() - <estrutura de repetição com teste lógico no início/> --------------------------------
+    
+    while(condição) {
+        bloco de comando
+    }  ... pós-laço ...
+        
+        A estruturas 'while()' é a mais comum para repetições, ela executa o teste lógico no início.
+        Em sua execução, retornando true, irá entrar em repetição até retornar false; retornando false, 
+        o comando continurá fora do laço.
+        Em outras palavras, teste lógico>true>executa>repete-teste>......>false>sai do laço.
+
+        'while()' irá executar suas instruções repetidas vezes enquanto(while) a condição
+        declarada dentro do laço seja retornada como true. No caso da condição retornar false 
+        o laço finalizará e passará o controle para os códigos/instruções fora do laço.
+
+            Exmp Metafórico:
+                function comerpizza() {
+                    while (tem fatia()) {
+                        comerfatia()
+                    }
+                } ..'Bah, cabou a pizza'..;
+        
+                Nesse caso, dentro da função "comer pizza", coloquei "enquanto tiver fatia", 
+                em outras palavras, enquanto "tiver fatia", irá executar "comer fatia".
+                Irá "comerfatia()" enquanto(while) "temfatia()" até terminar de "comerpizza()".
+                Quando acabar as fatias, independente do número delas, irá repetir essa função, 
+                ao acabar as fatias, irá para o fim do bloco "funcion comerpizza()" e prosseguirá
+                com os próximos comandos.
+    
+            Exmp Prático:
+    
+                let c = 1
+                while (c<=6) {
+                    console.log(`Passo ${c}`)
+                    c++
+                } ....
+                Resultando em:
+                Passo 1
+                Passo 2
+                Passo 3 
+                Passo 4
+                Passo 5
+                Passo 6
+    
+                Nesse caso, tendo o 'c = 1', 'enquanto'(while) for abaixo/igual 6, repetirá o
+                o comando somando 'c +1' em cada repetição. De forma mais complexa, seria 
+                tendo 1 como 'c', 'enquanto'(while) for <= à '6', irá escrever 'passo 'c' +1' 
+                após cada repetição.
+--------------------------------------------------------------------------------------------------}
+
+{-- do...while() - <estrutura de repetição com teste lógico sempre no final/> ---------------------
+    do {
+        bloco de comando
+    } while(condição)
+        A declaração 'do...while()' irá executar o teste lógico após a execução do bloco, sendo assim, 
+        primeiro irá executar o bloco de comando, depois irá para o teste lógico, retornando true 
+        volta ao bloco de comando, retornando false sai do fluxo de repetição.
+        Em outras palavras, executa-bloco>teste-lógico>true>executa>repete-teste>....false>segue-comando.
+
+        'do...while()' primeiro executa o bloco de comando, depois segue para o teste lógico.
+        Enquanto estiver retornando true volta ao bloco de comando seguindo para o teste lógico;
+        retornando false, sai do fluxo de repetição e seguirá para os comandos seguinte.
+            Exmp Prático:
+                let c = 1
+                do {
+                    console.log(`Passo ${c}`)
+                    c++
+                } while (c<=6)
+                Resultando em:
+                Passo 1
+                Passo 2
+                Passo 3 
+                Passo 4
+                Passo 5
+                Passo 6
+                Esse exemplo é o mesmo usado no 'while()', apenas usando a estrutura de teste lógico 
+                no final, para exemplificar o uso de 'do...while()'. De forma mais complexa falando, 
+                'do...while' seria: 'faça'(do) o que estiver no bloco('{}') 'enquanto'(while) for 
+                'menor ou igual a 6' (c<=6), se for 'maior a 6'(c>6) sai dessa repetição e prossiga
+                com os comandos seguinte.
+--------------------------------------------------------------------------------------------------}

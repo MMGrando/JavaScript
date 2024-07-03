@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #020911;
+            color: #fcf8eb;
+            font: normal 16pt montserrat;
+        }
+        h1 {
+            color: #039faa;
+            font: Bold 32pt montserrat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cálculo de datas</h1>
+    <p>Até o momento não consigo calcular idade com dd/mm/aa, <br/>
+    apenas usando "'ano atual - ano de nascimento'". <br/></p>
+
+    <br/>Qual ano estamos? <input type="number" name="anohj" id="anohj"><br/>
+    Que ano você nasceu? <input type="number" name="anonasc" id="anonasc"><br/>
+    <input type="button" value="calcular" onclick="subtrair()">
+    <div id="res">Quantos anos você têm?</div>
+    <div id="dirigir">Já pode dirigir?</div>
+
+    <script>
+        function subtrair() {
+            var anohj1 = window.document.querySelector('input#anohj');
+            var anonasc1 = window.document.querySelector('input#anonasc');
+            var res = window.document.querySelector('div#res');
+            var n1 = Number(anohj1.value)
+            var n2 = Number(anonasc1.value)
+            var s1 = n1 - n2 
+            res.innerHTML = `Você tem ${s1} anos! <br/>`
+            dirigir.innerHTML = s1 >= 18 ? `Pode pegar no volante!!`:`Vaza do volante, rapá!`;            
+        }
+    </script>
+</body>
+</html>

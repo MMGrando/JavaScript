@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Documento Object Model (DOM)</title>
+    <style>
+        body {
+        /*background-color: #020911;*/
+        color: #fcf8eb;
+        font: normal 16pt montserrat;
+    }
+    /*    h1 { /*estilo título*/
+    /*        color: #039faa;
+            font: Bold 32pt montserrat;
+        }
+        p {
+            color: #fcf8eb;
+            font: normal 22pt montserrat;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Aprendendo mexer com DOM!</h1>
+    <p>Resultados aparecerão aqui.<br/> 
+    Utilizando <strong>DOM</strong> em JS.</p>
+    <p>Esse <strong>DOM</strong> é o bixão mesmo viu?!</p>
+    <div>Clique aqui!</div>
+    <script>
+        var body1 = window.document.body
+            body1.style.background = '#020911'
+        var título1 = window.document.getElementsByTagName('h1')[0]
+            título1.style.color = '#039faa'
+        var parágrafo1 = window.document.getElementsByTagName('P')[0]
+        var parágrafo2 = window.document.getElementsByTagName('p')[1] 
+            window.document.write(`<br/>Repetindo.<br/> ${parágrafo2.innerHTML}`)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiras tentativa</title>
+    <style> /* Style=CSS */
+        body { /*estilo fonte geral*/
+            background-color: #020911;
+            color: #fcf8eb;
+            font: normal 20pt montserrat;
+        }
+        h1 { /*estilo título*/
+            color: #039faa;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h11"></h1>
+    <p id="p1"></p>
+    <script> //script=programação (neste caso, em JS)//
+        var nome1 = window.prompt('Qual seu nome?')
+        var nome2 = window.prompt('Cuidado, ' + nome1 + '! Pois há um ladrão à solta. Qual o nome do ladrão?') 
+        window.alert('Entendi, ' + nome1 + '. Caso você ache o ' + nome2 + ', chame a polícia!')
+        document.getElementById('h11').innerHTML = `Olá ${nome1}`
+        document.getElementById('p1').innerHTML = `Cuidado com ${nome2}`
+        $("h1").html("Olá " + nome1).innerHTML;
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+Operadores
+
+ORDEM DE PRECEDÊNCIA
+    Op Aritméticos
+    Op Relacionais
+    Op Lógicos 
+
+Aritméticos
+    Todos são operadores aritméticos para execução de cálculos. 
+        Operadores Aritméticos Normal       Operadores Aritméticos Simplificados
+        +   2 + 5 = 7                       2 +
+        -   2 - 5 = 3                       
+        *   2 * 5 = 10                      
+        /   2 / 5 = 2,5                     
+        %   2 % 5 = 1                       
+        **  2 ** 5 = 25                     
+    Exceto os operadores com função óbvia, temos:
+        ** = sinal de potência, ou seja, elevado ao quadrado/n²
+        % = É uma "atribuição de resto" que retorna o restante de uma divisão,
+        ou seja, o número que resta antes de ser colocado a vírgula numa divisão.
+
+    Macete:
+       Raiz quadrada--->  x**(1/2)       Raiz Cúbica--->  x**(1/3)
+            25**(1/2)                                   127**(1/3)
+            81**(1/2)                           
+
+    Dentre esses operadores, temos sua ordem de precedência.
+        Que são:
+            () 
+            ** 
+            * / % 
+            + -
+    Assim como na matemática aqui temos uma ordem daquilo que será calculado dentro de 
+    um cálculo aritmético. Quando há dois ou mais operadores com o mesmo valor de Precedência,
+    cálcula-se sobre ordem de posição (da esquerda para direita).
+
+Atribuição
+    O operador básico de atribuição é o sinal de igual (=). De forma mais técnica, 'o operador de atribuição
+    atribui o valor do operando à direita ao operando à esquerda'. 
+        Isto é, n = 1:
+            O operando à esquerda é o 'n'
+            O operando à direita é o '1'
+        Se temos: 'n = 1', a partir deste momento o = atribui para o 'n' o valor de '1'.
+    Ou seja, o operador de atribuição (=) define que o 'n' RECEBERÁ '1' como valor.
+
+    Dentro das atribuições,
+        Atribuição Simples são:
+            var c1 = 5 + 5
+            var c2 = c1 * 5 
+            var c3 = c2 + c1 / (2 % 5)
+            etc...
+        Auto-atribuições    Auto-atribuições Simplificados
+            var c = 4           var c = 4
+            var c = c + 5       var c += 5
+            var c = c / 2       var c /= 2
+                Por ser 'var c' em todas linhas, a var calcula com o valor do 'var c' anterior para 
+                transformar o resultado dessa var o novo 'var c'.
+
+    Ainda dentro de simplificar atribuições, 
+        Temos o operador de incremento:
+            +1 ou -1 substitui por ++ ou --
+            Ou seja, se 'n1 = 5',
+            Muda 'n2 = n1 + 1' para 'n2 = n1++'
+            Ou então, se repetir var: 'n1 = n1 + 1', para 'n1 ++'.        
+
+Relacionais
+    Não somente para JS, mas na maioria das linguagens de programação, 
+    os operadores relacionais são:
+        Operadores relacionais
+            >       - Maior que
+            <       - Menor que 
+            >=      - Maior ou igual que 
+            <=      - Menor ou igual que 
+            ==      - Igual (nota-se '= atribuição' '== igualdade') 
+            !=      - Negação (/diferente) 
+    Expressão que contém um operador relacional terá seu resultado 
+    num valor Booleano (Data Type para True/False)
+        Relacioinais em operação
+            5 > 2   - True      (5 é maior que 2)
+            7 < 4   - False     (7 não é menor que 4)
+            8 >= 8  - True      (8 é igual ou maior que 8)
+            9 <= 7  - False     (9 não é igual ou maior que 7)
+            5 == 5  - True      (5 é igual que 5)
+            4 != 4  - False     (4 não é diferente de 4)
+
+    Utiliza-se operações utilizando cálculos com operadores aritméticos junto de operadores relacionais,
+    como por exemplo:
+    var n1 = 10
+    var n2 = 15
+    n1 > n2 - 6     - True (10 > 15 - 6)    -(10 > 9)
+        Nota-se que primeiro utilizei o operador aritmético, depois o operador relacional.
+    
+    Junto do operador de igualdade (==), temos uma especificação de IDENTIDADE (===)
+        O operador de igualdade (==) avalia apenas o valor do caracteres
+        O operador de IDENTIDADE (===) avalia, também, o DATA TYPE
+            Por exemplo,
+                5 == '5' é TRUE 
+                5 === '5' é False
+                Isso porquê entre '' se torna uma String, aí temos Number === String.
+                IGUALDADE   'Number == String'  com valor igual é TRUE, mesmo com DATA TYPE diferente.
+                IDENTIDADE  'Number === String' com DATA TYPE diferente é FALSE, mesmo com valor igual.
+
+Lógicos
+    Como operadores lógicos temos:
+        !       - Negação
+        &&      - Conjunção (x E y)
+        ||      - Disjunção (x OU y)
+
+    Operador ! - Negação 
+        !False = True 
+        !True = False 
+        É uma questão de interpretação, 
+        Ex, "algo '!False == True'", que seria: "algo 'não falso é algo verdadeiro'".
+        Ou, "algo '!True == False'", que seria: "algo 'não verdadeiro é algo falso'".  
+
+    Operador && - Conjunção (x E y)
+        Esse é um operador BINÁRIO, isso é: temos dois valores lógicos um de cada lado.
+        Em ação, esse operador age da seguinte maneira:
+            True && True    - True
+            True && False   - False
+            False && True   - False 
+            False && False  - False 
+            Nessa operação retornará True SOMENTE quando ambos operandos sejam True.
+            Qualquer coisa fora de ambos resultados lógicos True retornará False.
+
+    Operador || - Disjunção (x OU y)
+        Esse é um operador BINÁRIO, isso é: temos dois valores lógicos um de cada lado.
+        Em ação, esse operador age da seguinte maneira:
+            True || True    - True 
+            True || False   - True 
+            False || True   - True 
+            False || False  - False 
+            Nessa operação retornará True bastante que apenas um deles seja True.
+            Apenas retornará False caso AMBOS resultados lógicos sejam False.   
+
+Condicional (Ternário)
+    Como operador Ternário temos:
+        ?
+        :
+    Esse operador junta três operando, veja:
+        Teste ? True : False 
+    Ou, um ExpPrático:
+        média >+ 7.0 ? Aprovado : Reprovado 
+        Nesse caso, definindo a média nesse teste lógico, teremos resultados diferentes para 
+        casos acima e abaixo de média. Sendo Aprovado ('True') e Reprovado ('False').

@@ -1,0 +1,103 @@
+
+{---CONDIÇÕES-------------------------------------------------------------------------------------}
+    Em toda linguagem de programação, o código precisa tomar decisões e realizar ações
+    dependendo de diferentes entradas. Por exemplo, em um jogo se as vidas do 
+    player chega a 0, é game over. 
+    E para isso temos na programação as condições. Condição é uma expressão 
+    que pode ser avaliada como true ou false;
+        Essas são as duas principais condicionais: 'if' e 'else'
+            A condicional 'if' é uma estruta que executa a afirmação se
+            determinada condição for verdadeira (true).
+            A condicional 'else' é executada se a condição for falsa (false).
+
+{---Condição Composta -----------------------------------------------------------------------------
+    Sintaxe básico:
+        if (condição) {
+            'true'
+        }
+        else {
+            'false'
+        }
+        Nessa condição teremos dois blocos que serão executados
+        de acordo com o retorno da condição. Havendo aqui dois caminhos
+        possíveis para acontecerem.
+---------------------------------------------------------------------------------------------------}
+
+{---Condição Simples ------------------------------------------------------------------------------
+    Sintaxe básico:
+        if (condição) {
+            'true'
+        }
+        Diferente da condição anterior, aqui temos apenas um bloco para
+        ser executado no caso do retorno condicioal ser true. Caso contrário,
+        nada acontecerá e o fluxo do programa continuará.
+---------------------------------------------------------------------------------------------------}
+
+{---Macete Cond Simp/Comp -------------------------------------------------------------------------
+    Em ambos casos, posso construir uma "árvore infinita" de possibilidades.
+    Exemplo prático:
+        if (condição) {
+
+        } else if (condição) {
+            true
+        } else if (condição) {
+            true
+        } else if (condição) {
+            true
+        } ...infinitamente... {
+            true
+        } else {
+            false
+        }
+        OBS.: Opcional colocar o "else {}" (portanto, funciona como cond Simp e Comp).
+        Nesse caso, eu posso usar várias vezes o "else...if" construindo diversas condições. 
+        Existem formas mais elaboradas como a Condição Aninhada e SWITCH; mas fica aqui registrado 
+        essa opção simples para colocar inúmeras condições.
+---------------------------------------------------------------------------------------------------}
+
+{---Condição Aninhada -----------------------------------------------------------------------------
+    Sintaxe básico:
+        if (condição1) {
+            'true'
+        } else {
+            'false' if (condição2) {
+                        'true'
+                    } else {
+                        'false'
+                    }
+        }
+        Nesse caso inserimos uma condição dentro de outra condição. Ou seja,
+        após um retorno condicional ele executa outra condição, resultando em
+        outro retorno condicional, e assim por diante (dentro daquilo que foi programado).
+        Dessa forma, não se limita em duas possibilidade de retorno condicional, pelo 
+        contrário, há possibilidade infinita de condições.
+---------------------------------------------------------------------------------------------------}
+
+{---switch, Condição Múltipla ---------------------------------------------------------------------
+    OBS.: Só funciona com string e números inteiros.
+        Sintaxe básico:
+            OBS.: Necessário sempre colcoar BREAK pós cada CASE.
+                switch (expressão) {
+                    case valor1:
+
+                    break 
+                    case valor2:
+
+                    break
+                    case valor3:
+
+                    break 
+                    default:
+
+                    break
+                }
+            OBS.: BREAK obrigatório pós cada CASE.
+                Diferente de todas as outras condições, no SWITCH temos possibilidades
+                de outros valores FIXOS (não se limitando apenas 'true or false'). Ou seja,
+                podendo escolher 3 ou mais valores, para que retornando tal valor o bloco 
+                programado seja executado. Da mesma forma que, se assim for desejado, 
+                retornará 'DEFAULT' caso nenhum dos valores fixos retornem.
+                Por questão operacional o 'break' se faz necessário, caso contrário, é como
+                se o programa não parece de ler todos outros valores mesmo já tendo retornado 
+                o valor certo, podendo ocasionar problemas e bugs.
+---------------------------------------------------------------------------------------------------}

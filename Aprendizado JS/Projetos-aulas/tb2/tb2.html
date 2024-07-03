@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #020911;
+            color: #fcf8eb;
+            font: normal 16pt montserrat;
+        }
+        h1 {
+            color: #039faa;
+            font: Bold 32pt montserrat;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var idade = Number(window.prompt('Qual ano estamos?'));
+        var nasc = Number(window.prompt('Seu ano de nascimento?'));
+        var carteira = idade - nasc
+            document.write(`Idade: ${carteira} Anos ! <br/>`);
+        carteira >= 18 ? document.write(`Já pode tirar carteira!!`):document.write(`Nada de dirigir, rapaz!`);
+    </script>
+</body>
+</html>

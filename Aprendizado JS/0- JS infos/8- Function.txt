@@ -1,0 +1,130 @@
+
+FUNÇÕES - 'function ação() {}'
+{---De forma bem resumida, funções são ações que são chamadas ou gatilhadas por um evento. ----------------------
+        Funções são um conjunto de linhas disparadas por um evento. Ou seja, diferente
+        de um código carregado automaticamente junto da janela da web, o conjunto de
+        linhas/códigos designados com funções precisam de um EVENTO como gatilho
+        para disparar sua atividade.
+        Esse conjunto de linhas devem estar delimitados dentro de um 'bloco' ({}), e em conjunto 
+        com a função deve-se ter o nome da ação pretendida, ou seja, o nome do evento.
+            Função  =   function 
+            evento  =   ação()
+            parâm.  =   ação(parâmetros)
+            bloco   =   {}
+                Ou seja, 'function ação() {}'
+                Parâmetros é opcional colocar.
+                Ou seja, 'function ação(param) {}'
+            Funções podem, ou não, possuir parâmetros e retornar resultados.
+-------------------------------------------------------------------------------------------------------------}
+
+{---Sintaxe - Função com parâmetros e retorno de resultado.
+        function ação(parâm){   //='parâm formal'
+            return restultado
+        }
+        ação(n)     //(n)='parâm real'
+            Nesse caso, 'ação(n)' fica abaixo da 'function' sendo a chamada.
+            Ele irá levar o valor desse parâmetro real para dentro do parâmetro formal.       
+-------------------------------------------------------------------------------------------------------------}
+
+    {---Exemplo prático dessa Sintaxe: --------------------------------------------------------------------------
+            function ParOuImpar(n){
+                if(n%2==0) {
+                    return 'par'
+                } else {
+                    return 'ímpar'
+                }
+            }
+            let res = PArOuImpar(11)
+            Algumas considerações:
+                (n%2==0) - é o número dividido por 2 tendo seu resto igual a 0.
+                    <O % retorna o número de resto antes da vírgula numa divisão.>
+                Se retorna ==0, será 'par'; se não, será 'ímpar'.
+            No exemplo acima, é 11. 11%2=1 (o 1 sobra, já que, no cálculo 
+            seria 5x2, 11-10, para então colocar na divisão ,5).
+            Ou seja, sendo 11%2=1, retorna false(não é ==0).
+    ---------------------------------------------------------------------------------------------------------}
+
+    {---Exemplo prático 2(ação somar): --------------------------------------------------------------------------
+            function soma(n1, n2){
+                return n1 + n2
+            } 
+            console.log(soma(4,5))
+
+            O n1 receberá 4, n2 receberá 5. O comando vai executar a ação de somar()
+            e somará 4+5 (n1+n2). 
+            Porém, ao deixar n1 ou n2 sem número, JS reconhecerá como undefined (retorna NaN); 
+            para evitar isso, posso colcoar 'parâmetros pré definidos'.
+                Ou seja, 'soma(n1=0, n2=0){}'
+                Ou seja, se deixar sem  número o resultado será 0. Se usar apenas um número,
+                será número + 0. Etcetcetc.
+    ---------------------------------------------------------------------------------------------------------}
+
+    {---Exemplo Prático 3(variável recebe function): ------------------------------------------------------------
+            let v = function(x){
+                return x*2
+            }
+            console.log(v(5))
+                Ou seja, eu passei para minha variável um parâmetro (v(5)), 
+                e com isso executou uma função.
+    ---------------------------------------------------------------------------------------------------------}
+
+    {---Exemplo Prático 4(Fatorial): ----------------------------------------------------------------------------
+            function fatorial(n) {
+                let fat = 1
+                for(let f=n; f>1; c--){
+                    fat *= f
+                }
+                return fat
+            }
+            //fatorial= 5! = 5x4x3x2x1=120
+    ---------------------------------------------------------------------------------------------------------}
+
+    {---Exemplo Prático 5(RECURSÃO): ----------------------------------------------------------------------------
+            function fatorial(n){
+                if(n==1){
+                    return 1 
+                } else {
+                    return n* fatorial(n-1)
+                }
+            }
+            console.log(fatorial(5))
+
+            Recursão é o ato de uma função invocando a si mesma. 
+
+            Esse pode facilmente ser confundido com uma repetição. Nota-se, o número entra
+            em um looping:
+            Se(if) é falso que o parâmetro é igual 1 (n==1), então rodará o valor do 'n * fatorial(n-1)',
+            a função vai "empilhando" os problemas até ter um número atribuído ao 'fatorial(n-1)'. Nota-se que 
+            o 'n *' não consegue multiplicar pelo "fatorial(n-1)" até que este se retorne um número (não 
+            sendo mais 'fatorial(2-1), mas sim 1'). 
+            Após seguir esse "empilhamento" até chegar no retorno de um número (ou seja, retornar true), 
+            inicia-se o processo de 'desempilhamento', ou seja, irá resolver os problemas acumulados na 
+            ordem do último para o primeiro.
+            Ou seja:
+                n=5==1?false, então, 5*fatorial(5-1)
+                n=4==1?false, então, 4*fatorial(4-1)
+                n=3==1?false, então, 3*fatorial(3-1)
+                n=2==1?false, então, 2*fatorial(2-1)
+                n=1==1?true, então, retorna 1.
+                    ATENÇÃO: quando temos ação(n-1), ele retorna da AÇÃO.
+                    Desta forma, o 'n *' não consegue calcular com 'fatoria(n-1)'. 
+                    No momemento que n=1, retorna true, e no lugar do 'fatorial()',
+                    teremos um número atribuído 'if(){'return 1'}', esse 'return 1' 
+                    atribuirá um número possível de ser multiplicado pelo 'n *'.
+            E assim recomeça:
+                retornou 1;
+                2*1 = retornou 2
+                3*2 = retornou 6
+                4*6 = retornou 24
+                5*24 = retornou 120
+
+            É como se fosse,        a=1
+                                2 * a(1) = b(2)
+                                3 * b(2) = c(6)
+                                4 * b(6) = d(24)
+                                5 * d(24) = e(120)
+    ---------------------------------------------------------------------------------------------------------}                      
+
+
+
+

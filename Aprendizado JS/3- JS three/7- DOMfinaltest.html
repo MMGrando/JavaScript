@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um teste bem testado!</title>
+    <style>
+        body {
+            background-color: #020911;
+            color: #fcf8eb;
+            font: normal 16pt montserrat;
+        }
+        h1 {
+            color: #039faa;
+            font: Bold 32pt montserrat;
+        }
+    </style>
+</head>
+<body>
+    <h1>SOMANDO NÚMEROS</h1>
+    <input type="number" name="txt1" id="txt1">
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+        function somar() {
+            var tn1 = window.document.querySelector('input#txt1')
+            var tn2 = window.document.querySelector('input#txt2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s1 = n1 + n2 
+            res.innerHTML = `Resultado: ${s1}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo simples para aula.</title>
+    <link rel="stylesheet" href="tb8- style.css">
+</head>
+<body>
+    <header>
+        <h1>Modelo simples</h1>
+    </header>
+    <section>
+        <div id="options">
+            <p>Operação desejada: </br></br>
+                <input type="radio" name="calcule" id="mult" checked>
+                <label for="mult">Multiplicação</label>
+                <input type="radio" name="calcule" id="divis">
+                <label for="divis">Divisão</label>
+                <input type="radio" name="calcule" id="adiç">
+                <label for="adiç">Adição</label>
+                <input type="radio" name="calcule" id="subt">
+                <label for="subt">Subtração</label>
+            </p>
+        </div>
+        <div>
+            <p>Tabuada de:  <input type="number" name="tabuadade" id="tde"></p>
+            <p>Até quanto?  <input type="number" name="tabuadeaté" id="taté"></p>
+            <p><input type="button" value="Calcular tabuada" onclick="calcular()"></p>
+        </div>
+        <div id="result0">
+            Calcule tabuada de qualquer número!
+        </div>
+        <div>
+            <select name="tabuada" id="tcaixa" size="10">
+                
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;MarcosGrando</p>
+    </footer>
+    <script src="tb8- script.js"></script>
+</body>
+</html>

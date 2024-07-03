@@ -1,0 +1,41 @@
+
+REPETIÇÕES 
+    Como visto em '10- Repetições.txt', toda linguagem de programação possuem formas de 
+    executar uma mesma ação repetidas vezes. E para isso precisamos de estruturas de 
+    comando que faça a repetição do bloco por diversas vezes.. 
+        Nas várias estruturas de repetições, temos: 
+            for; do...while; while; label; break; continue;  for...in; for...of;
+
+{---for(inicio;teste;incre) - <estrutura de repetição com variável de controle/> --------------------------
+    for(início; teste lógico; incremento) {
+        bloco de comando
+    }
+        A declaração 'for()' inicia com seu teste lógico, e em sua execução, retornando true, 
+        o bloco de comando será executado e repetirá o teste lógico; PORÉM, dessa vez adicionando 
+        o incremento. 
+
+        Em sua execução, retornando true, irá executar o bloco de comando e repetirá o teste lógico; PORÉM, 
+        dessa vez adicionando o INCREMENTO toda vez que a execução se repetir. Ou seja, o incremento irá 
+        ser adicionado SEMPRE que a repetição acontecer. retornando false, irá continuar o fluxo de códigos 
+        fora do laço, ou seja, pulando o bloco de comando em questão.
+            Em outras palavras, 
+                teste-lógico>true>executa>+incremento>teste-lógico>true>executa>+incremento......>false>
+
+        'for ()' faz o teste lógico; retornando true executa bloco de comando; repete o teste lógico;
+        retornando true adiciona 'o incremento' e executa bloco de comando; repete... até retornar false.
+            Exmp Prático:
+                for (let c=1;c<=4;c++) {
+                    console.log('Passo ${c}')
+                }
+                Resultando em:
+                Passo 1
+                Passo 2
+                Passo 3
+                Passo 4
+            Nesse caso, de forma mais complexa falando, 'for(inic;test;incr) seria: 
+            Iniciando com 'c=1', se o resultado for 'menor ou igual a 4'(c<=4),
+            executa o bloco 'console.log('Passo{c})', e 'adiciona o incremento'(c++) em cada repetição
+            até o resultado não for 'menor ou igual a 4'(=/= c<=4), que retornará false e saíra
+            da estrutura/laço de repetição.
+----------------------------------------------------------------------------------------------------------}
+

@@ -1,0 +1,11 @@
+LIVE SERVER
+    crtl + shift + P 
+    digita "Live server" 
+    clica "open with live server"
+    E dessa maneira irá abrir o projeto utilizando um mini servidor que
+    permitirá alterações em tempo real sem atualização da página.
+
+    Ou, forma mais simples: apenas clique com botão direito no arquivo html e clica em "open with live server"
+    
+DEPURADORES
+    Run >> start debuggins >> "run e debug (crtl shift d)"  

@@ -1,0 +1,8 @@
+Indicadores -
+NÃO pode começar com números
+NÃO pode conter ESPAÇOS 
+NÃO pode conter palavras reservadas
+    - palavras ou siglas já usadas no código
+DEVE começar com letras, $ ou _
+possível usar letras ou números 
+possível usar acentos e símbolos

@@ -1,0 +1,39 @@
+DOM - Document Object Model
+Modelo de objetos para documento.
+
+    DOM é um conjunto de alementos dentro do navegador que dará acesso
+    aos componentes internos de um website. Representando o documento 
+    como nós e objetos para que, desta forma, as linguagens de programação 
+    possa interagir com a página. Para que assim, os programas possam alterar
+    a estrutura, o estilo e o conteúdo do documento. 
+    De forma direta, DOM seria uma interface de programação para documentos da WEB.
+
+O conjunto de ELEMENTOS que um DOM possui (seja window, ou history/document/etc.., ou 
+html, ou head/body, ou meta/title/style/h1/p/div/etc..., entre muitos outros.) podem 
+ser NAVEGADOS; ou seja, posso selecionar esses elementos para navegar dentro 
+da minha árvore DOM (em assim, analisar e alterar os elementos).
+
+    Existem MÉTODOS de ACESSO para fazer isso, entre eles há 5:
+        por Marca   . - getElementsByTagName()[]  
+        por ID      # - getElementByid()          
+        por Nome      - getElementsByName()[]     
+        por Classe  . - getElementsByClassName()  
+        por Seletor   - querySelector()           
+                      - querySelectorAll()        
+
+EVENTOS DOM
+    Podem ser configurados na parte html ou <script>  
+
+    Dentro do DOM, temos seus EVENTOS. Que seriam todas as dinâmicas/interações 
+    que podem acontecer co m determinado elemento dentro de uma página/janela 
+    através de códigos/scripts.
+    Entre eles, o mais comum são os eventos de mouse: 
+        (abaixo são apenas alguns dos muitos eventos existentes em JS)
+        mouseenter  =   interação ao cursor entrar no elemento;
+        mousemove   =   interação ao cursor se mexer dentro do elemento;
+        mousedown   =   interação ao segurar o click do mouse dentro do elemento;
+        mouseup     =   interação ao soltar o click pressionado do mouse dentro do elemento;
+        click       =   interação ao clickar com o mouse dentro do elemento;
+        mouseout    =   interação ao cursor sair do elemento.
+        
+

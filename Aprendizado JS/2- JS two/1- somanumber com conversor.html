@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiras tentativa</title>
+    <style> /* Style=CSS */
+    h1 { /*estilo título*/
+        color: #039faa;
+        font: bold 50pt montserrat
+        }
+    p { /*estilo fonte geral*/ 
+        color: #fcf8eb;
+        font: normal 20pt montserrat;
+        }
+    body {
+        background-color: #020911;
+        color: #fcf8eb;
+        font: normal 20pt montserrat;
+    }
+    </style>
+</head>
+<body> <!-- body/head=HTML -->
+    <h1>Olá, mundo!</h1>
+    <p>Minha segunda brincadeira, será um prazer!!</p>
+    <tbody>Pois bem, aqui eu fiz um teste de SOMA. 
+        Para aprender somar dois números convertendo o resultado do prompt 
+        de String para Number.</tbody>
+    <script> //script=programação (neste caso, em JS)//
+       var n1 = Number(window.prompt('Qual seu número favorito?'))
+       var n2 = Number(window.prompt('Fantástico. Realmente, ' + n1 + ' é um bom número. Mas e seu número da sorte, qual é?'))
+       // ESPECIFICAR números reais usar: 'Number.parseFloat(n/script)' / números inteiros usar: 'Number.parseInt(n/script)'
+       var s = n1 + n2
+       String(window.alert(`Uau, se somado seu número favorito com seu número da sorte, no total dá ${s} Belo número!`))
+       //.^. não era necessário, mas testei o "String(n/script)", um conversor de data type para String, 'n/script.toString' também funciona
+       // - porém, por transformar em String, a soma de números quebrados acabam resultando em NaN (NotANumber)
+    </script>
+</body>
+</html>

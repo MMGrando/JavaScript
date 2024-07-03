@@ -1,0 +1,25 @@
+------------------------------------------------------------------------------------------</1
+1 - CONVERSÃO de Data Types 
+----------------------------------------------------------------------------/I
+    I - String > Number 
+'Number.parseInt(n/script)' = para números INTEIROS
+'Number.parseFloat(n/script)' = para números REAIS (com vírgula)
+
+Por exemplo, aplicação:
+var n1 = Number.parseInt(window.prompt(Qual seu número da sorte?))
+
+FORMA SIMPLIFICADA
+'Number(n/script)'
+var n1 = Number(window.prompt(Qual seu número da sorte?))
+
+Caso eu quiser ESPECIFICADAMENTE trabalhar com números inteiros OU reais, 
+utilizo os comandos listados acimas. Quando eu quiser deixar AUTOMATIZADO, 
+uso 'Number(n/script)' e o JS vai trabalhar com os dois.
+----------------------------------------------------------------------------I/
+----------------------------------------------------------------------------/II
+    II - Number > String 
+String(n/script)
+n/script.toScript() 
+----------------------------------------------------------------------------II/
+
+------------------------------------------------------------------------------------------1/>

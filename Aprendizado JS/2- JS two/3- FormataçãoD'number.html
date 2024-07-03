@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        background-color: #020911;
+        color: #fcf8eb;
+        font: normal 20pt montserrat;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var n1 = 2.5
+        var n2 = 5
+        var s = Number(n1 + n2)
+        // .tofixed(2) para .00 / .tofixed(2).replace('.', ',') para ,00 (apenas troca .>,)
+        document.write(`A soma de ${n1} + ${n2} = ${s}<br/>`)
+        document.write(`A soma de ${n1.toFixed(2)} + ${n2} = ${s.toFixed(2)}<br/>`)
+        document.write(`A soma de ${n1.toFixed(2).replace('.', ',')} + ${n2} = ${s.toFixed(2).replace('.', ',')}<br/>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+DOM -  Document Object Model 
+Modelo de objetos para documento.
+
+    ÁRVORE DOM 
+        Árvore DOM seria uma maneira de compreender de forma organizada toda hierarquia de
+        um site criado em HTML. Para entendermos melhor de que maneira esse conceito se aplica
+        quando adicionamos componentes em nosso website vamos ver um exemplo prático.
+        EXEMPLO NA PRÁTICA de uma Árvore Dom:  
+
+            Se eu quero criar um estilo (style), estarei adicionando no meu documento, 
+            respeitando a hierarquia, um 'style' dentro do 'head'
+            (ou melhor dizendo, irei adicionar um 'style' na minha 'árvore DOM'): 
+                html > head > (colocarei, aí sim) <style> </style> 
+                Falando na prática:
+                <html> 
+                    <head>
+                        <style>
+
+            Se eu quiser criar algo dentro do meu 'style', como por exemplo um 'body', minha 
+            árvore terá uma nova adição no documento:
+                html > head > Style > body {}
+                Falando na prática:
+                <html> 
+                    <head>
+                        <style>
+                            body {
+
+                            }
+        
+        Logo abaixo pegaremos como exemplo "Domdomdom.html" para criarmos essa árvore como exemplo. 
+            
+        WINDOW - Janela de um navegador, a raíz de um DOM.
+            (abaixo alguns dos muitos objetos de uma árvore DOM)
+            Location - a localização do site (url, página atual, anterior, etc)
+            History - o histórico de execução do site 
+            Document - o documento atual de execução 
+                html 
+                    head
+                        meta
+                        Title
+                        style
+                            body
+                    body
+                        h1
+                        p
+                            strong
+                        div
+        
+
+
+

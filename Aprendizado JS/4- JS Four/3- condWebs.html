@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendendo Condições</title>
+    <style>
+        body {
+            background-color: #020911;
+            color: #fcf8eb;
+            font: normal 16pt montserrat;
+        }
+        h1 {
+            color: #039faa;
+            font: Bold 32pt montserrat;
+        }
+    </style>
+</head>
+<body>
+    <h1>SNM - Sistema Nacional de Multas!</h1>
+    Velocidade do carro:<input type="number" name="inpspeed" id="inpspeed">Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var speed0 = window.document.querySelector(`input#inpspeed`)
+            var res = window.document.querySelector(`div#res`)
+            var speed = Number(speed0.value)       
+            res.innerHTML = `<p>Seu carro está à ${speed}km/h.</p>`     
+            if (speed > 60) {
+                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade!!</p>`
+            }
+            else {
+                res.innerHTML += '<p>Coloque o cinto!</p>'
+            }
+        }
+    </script>
+
+</body>
+</html>

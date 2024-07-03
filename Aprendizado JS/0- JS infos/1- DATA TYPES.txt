@@ -1,0 +1,27 @@
+TUDO na internet são dados
+- e existe TIPOS diferentes de DADOS
+((comando para trabalhar com cada DATA TYPES > typeof))
+
+Tipos de dados em JS (Data Types)
+- Number
+  - Para o JS, 'Number' é o grupo de dados com base númerica
+  - Dentro do Number, há os subtipos "Infinity" e "NaN (Not a Number)"
+    - Infinity
+    - NaN 
+
+- String
+  - Para o JS, 'String' são uma cadeia de caracteres, contendo números, 
+  letras, ponto, traços, etc. 
+
+- Boolean
+  - Para o JS "valor booleano": "True" ou "False"
+
+Number, String e Boolean são os principais DATA TYPES do JS.
+Porém, ainda assim, JS contém outros importantes DATA TYPES,
+sendo eles...
+
+"Null"
+"Undefined"
+"Object"
+  - 'Array' (vetor)
+"Function"

@@ -1,0 +1,33 @@
+
+    FORMATAÇÃO DE DATA TYPES
+
+------------------------------------------------------------------------------------------</1
+1 -  FORMATADOR de String
+   - ${} -
+${} serve para facilitar o uso de uma variável dentro de um texto,
+só funciona entre ``, não vai funcoinar usando "" ou ''.
+Exemplo prático: `A soma de ${n1} mais ${n2} vai dar ${s}.`
+
+Ainda dentro de formatação de String (tendo var x ), temos 
+    x.length            - números de caracteres a string possui
+    x.toUpperCase()     - tudo em 'MAIÚSCULO'
+    x.toLowerCase()     - tudo em 'minúsculo'
+------------------------------------------------------------------------------------------1/>
+
+
+------------------------------------------------------------------------------------------</2
+2 - FORMATADOR de Number
+
+Alguns scripts para formatação de Number,  
+    var.toFixed()   - Mostra valores decimais após a vírgula. Exemp.Prático,
+sendo 'var n = 225,5': 'n.toFixed(2)' e 'n.toFixed(4)' = 225,50 e 225,5000
+
+DENTRO dessa formatação, existe a possibilidade de TROCAR .50 para ,50
+utilizando: 
+    .replace('.', ',') APÓS o var.toFixed()
+Sendo, n1 = 2.5 / n2 = 5 / s = n1 + n2 / Temos exem.Prático:
+    script.(`A soma de ${n1.toFixed(2).replace('.', ',')} + ${n2} = ${s.toFixed(2).replace('.', ',')})
+    = A soma de 2,50 + 5 = 7,50
+RESUMINDO: 
+    .tofixed(2) para .00 / .tofixed(2).replace('.', ',') para ,00 (apenas troca .>,)
+------------------------------------------------------------------------------------------2/>

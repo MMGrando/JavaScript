@@ -1,0 +1,47 @@
+
+1 - Soma (adição) de dois, ou mais, dados. -----------------------------------------------</1
+    var s = number + number
+    Sinal de + server principalmente para JUNTAR dados (2+4=24, por exmp)
+    Sinal de + só funciona como SOMA para NUMBERS+NUMBERS
+    TODOS 'window.prompt()' retorna um String
+    Portanto, quando queremos somar dados, precisamos de uma CONVERSÃO de DATA TYPE
+    converter de STRING para NUMBER
+------------------------------------------------------------------------------------------1/>
+
+1.5 - BLOCOS - Em JS blocos são delimitados em sinal de {} ! ExmPrático: funcion {}
+
+------------------------------------------------------------------------------------------</2
+2 - Facilita o uso da var dentro do script texto
+        ${}
+    ${} serve para facilitar o uso de uma var dentro de um texto,
+    só funciona entre ``, não vai funcoinar usando "" ou ''.
+    Exemplo prático: 
+        window.alert(`A soma de ${n1} mais ${n2} vai dar ${s}.`)
+------------------------------------------------------------------------------------------2/>
+
+------------------------------------------------------------------------------------------</3
+3 - Script de troca, útil para converter number
+        n/script.replace('', '')    - Troca uma coisa por outra
+    Útil para, por exemplo:
+        var n1 = 2.5 
+        var n2 = 5 
+        var s = n1 + n2
+        window.alert(`A soma de ${n1} mais ${n2} vai dar ${s}.`)
+            = A soma de 2.5 mais 5 vai dar 7.5
+        window.alert(`A soma de ${n1} mais ${n2} vai dar ${s}.`).replace('.', ',')
+            = A soma de 2,5 mais 5 vai dar 7,5 
+------------------------------------------------------------------------------------------3/>
+
+------------------------------------------------------------------------------------------</4
+4 - Também considerado uma formatação, temos um LOCALIZADOR:
+    var.toLocaleString()
+    Sendo 'var n = 1500' temos:
+        n.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'})
+        = window.alert{'Oba! Você ganhou ${n}!} = Oba! Você ganhou R$ 1,500.00!
+
+    n.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'})
+        String localizado por 'pt-BR', sob as configurações ({}) de estilo 'valor monetário' e moeda 'real'
+        Mudando, por exemplo, apenas a moeda/currency: (para USD ou EUR) mudará para dólar ou euro
+------------------------------------------------------------------------------------------4/>
+
+

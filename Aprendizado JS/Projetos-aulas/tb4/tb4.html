@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu testezinho...</title>
+
+    <style>
+        body {
+            background-color: #020911;
+            color: #fcf8eb;
+            font: normal 16pt montserrat;
+        }
+        h1 {
+            color: #039faa;
+            font: Bold 32pt montserrat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data hoje.</h1>
+    <input type="date" name="data01" id="data01">
+
+    <script>
+        var data = new Date()
+        var dia = data.getDate();
+        var sem = data.getDay();
+        var mes = data.getMonth();
+        var ano = data.getFullYear();
+
+        var horas = data.getHours();
+        var minutos = data.getMinutes();
+        var segundos = data.getSeconds();
+        
+        var semana = new Array('Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sábado');
+        var meses = new Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+        
+        var datahoje = (`<br/>${semana[sem]}, dia ${dia} de ${meses[mes]} de ${ano}.<br/>`);
+        var horário = (`${horas}:${minutos}:${segundos}`)
+        document.write(datahoje)
+        document.write(horário)
+
+        var dataNasc = window.document.querySelector('input#data01');
+        
+    </script>
+    
+</body>
+</html>

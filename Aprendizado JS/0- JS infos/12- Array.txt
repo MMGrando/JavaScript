@@ -1,0 +1,68 @@
+Array - Variáveis compostas
+    Comandos úteis (Array):
+        let abc = [X, Y, Z]
+        abc[3] = C      //adiciona um novo conteúdo (C) dentro de um elemento [3] (criando caso não exista)
+        abc.push(V)     // .push vai FIXAR um conteúdo no último elemento dentro de uma Array 
+        abc.length      // .length revela para nós o tamanho de nosso Array (quantos elementos estão na variável)
+        abc.indexOf()   // .indexOf() me retorna a o número da chave de identificação do elemento citado
+                    dentro do (). Ou seja, nesse caso, abc.indexOf(Z) = 2.
+                    No caso do valor pesquisado for inexistente, retornará = -1;
+                    Exmp: abc.indexOf(B) = -1.
+                    Posso usar isso com um 'if else', "'if'' o valor for -1, mensagem de [erro]",
+                                                    "'else' segue o comando".
+        abc.sort()      // .sort() irá colocar todos os elementos em onrdem CRESCENTE.
+            Outras dicas:
+                .length pode ser utilizado em for() como 'até esse Array terminar', por exemplo:
+                    for(let abc=0; abc<abcd.length; abc++){} // nesse caso, o '.length' vai servir
+                    num teste lógico onde, até todo Array 'abcd' for menor(<) que 'abc', soma +1 (abc++).
+
+    Array é basicamento um objeto que contém múltiplos valores, armazenados como uma "lista".
+    Desta forma, posdemos a acessar cada valor dentro dessa lista individualmente. 
+        -Diferente de uma 'variável simples, que recebe e armazena apenas um valor por vez;
+        'viáveis compostas' recebem e armazenam vários valores em uma mesma estrutura.
+        Com isso, uma variável composta NÃO perderá o valor anterior recebido para
+        receber/guardar um novo valor.
+
+        Diferença prática de Variável Simples X Array:
+            Var Simples: 
+                let a = Segunda-Feira
+                let b = Terça-Feira 
+                Let c - Quarta-Feira
+                Aqui, para trazer todos os dias de semanas como elementos utilizáveis, teria
+                que construir 7 variáveis (1 para cada dia da semana).
+            Array:
+                let a = [Segunda-Feira, Terça-Feira, Quarta-Feira]
+                Aqui, com apenas uma linha, e apenas uma única variávei (porém, composta)
+                eu tenho capacidade de trazer todos os dias da semanaa.
+
+    Importante resaltar que, por mais óbvio que seja, o valor de cada elemento 
+    dentro de um Array possui 'chave de indentificação' númerica iniciando-se por [0].
+    Em outras palavras, se eu possuo 3 elementos dentro de um Array, terei 
+    três chaves de itendificação [0, 1, 2]. Com isso, preciso apenas 
+    utilizar essa numeração após o nome da variável:
+        let abc = [x, y, z]
+        console.log(Vou ir lá em ${abc[0]}) // Vou ir lá em X
+        console.log(Vou ir lá em ${abc[1]}) // Vou ir lá em y
+        console.log(Vou ir lá em ${abc[2]}) // Vou ir lá em z
+
+    Exemplo prático de Array usando for()
+        let valores = [4, 8, 2, 6, 7]
+        for (let position=0; position<valores.length; position++) {
+            console.log('O ${valores[position]} é da posição ${position}!')
+        } // ele me retornará: "O 4 é da posição 0", "O 8 é da posição 1", etcetc          
+            Isso pq, basicamente, ele lê o código da seguinte maneira:
+            iniciando com posição igual a zero ('position=0'), enquanto a posição não chegar no final 
+            dessa Array considerando todos seus elementos ('position<valores.length), deve-se ser 
+            somado +1 em sua posição (position++). 
+                Logo, position=0<valor[0] // repete // +1= possition=1<valor[1] // ...  
+                    OBS.: valor[0]=4 // valor[1]=8, etc.  
+
+    Exemplo prático de Array usando for(in) // Sintaxe que funciona apenas em 'objetos'
+        let valores =  [4, 8, 2, 6, 7]
+        for(let position in valores) {
+            console.log('O ${valores[position]} é da posição ${position}!')
+        } // ele me retornará igual o anterior, é apenas uma forma mais simplificada.
+            Basicamente, esse comando é lido da seguinte maneira:
+            Para (for) cada posição (let position) dentro da Array (valores)
+            mostrarei o valor da Array (valores) de cada posição (position).
+    
