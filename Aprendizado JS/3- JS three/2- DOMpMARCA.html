@@ -22,10 +22,9 @@
 </head>
 <body>
     <h1>Aprendendo mexer com DOM!</h1>
-    <p>Resultados aparecerão aqui.<br/> 
-    Utilizando <strong>DOM</strong> em JS.</p>
-    <p>Esse <strong>DOM</strong> é o bixão mesmo viu?!</p>
-    <div>Clique aqui!</div>
+    <p>Resultados aparecerão aqui.<br/> Utilizando <strong>DOM</strong> em JS.</p>
+    <p>Usando <strong>DOM</strong>!</p>
+    <div class="msg">Clique aqui!</div>
     <script>
         var body1 = window.document.body
             body1.style.background = '#020911'
@@ -34,7 +33,9 @@
         var parágrafo1 = window.document.getElementsByTagName('P')[0]
         var parágrafo2 = window.document.getElementsByTagName('p')[1] 
             window.document.write(`<br/>Repetindo.<br/> ${parágrafo2.innerHTML}`)
-        
+        var msg = window.document.querySelector('div.msg')
+        msg.style.background = '#039faa'
+        msg.style.color = '#020911'
     </script>
 </body>
 </html>
