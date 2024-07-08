@@ -1,0 +1,26 @@
+Indicadores -
+NÃO pode começar com números
+NÃO pode conter ESPAÇOS 
+NÃO pode conter palavras reservadas
+    - palavras ou siglas já usadas no código
+DEVE começar com letras, $ ou _
+possível usar letras ou números 
+possível usar acentos e símbolos
+
+var = escopo global e mutável
+
+    Consigo definir variável dentro de um bloco if-else,
+    e usar essar variável ao longo do código;
+    Consigo definir outro valor para essa variável.
+
+let = escopo local e mutável
+
+    Variável definida em um bloco, exemp if-else, não 
+    será válida fora dele;
+    Consigo definir outro valor para esse variável.
+
+const = escopo local e imutável
+
+    Variável definida em um bloco, exemp if-else, não
+    será válida fora dele;
+    Não consigo definir outro valor para essa variável.
