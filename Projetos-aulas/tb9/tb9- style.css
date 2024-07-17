@@ -25,8 +25,10 @@ div#caixa {
 }
 select#caixanum {
     background-color: #fcf9f2;
-    width: 70px;
-    
+    width: 200px; /* Aumenta a largura */
+    height: 150px; /* Aumenta a altura */
+    font-size: 14pt; /* Aumenta o tamanho da fonte */
+    padding: 5px; /* Adiciona espaçamento interno */
 }
 div {
     text-align: center;
@@ -37,3 +39,4 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
