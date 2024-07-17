@@ -15,16 +15,16 @@ Entre os últimos exercícios, o 8º e o 10º lembro ter feito sozinho. Os demai
 
 <h3>Projetos/exercícios</h3>
 <p>Abaixo todos pros "exerícios/projetos feitos em aula</p>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb1/"><p>1º Projeto/exercício - Usando 'window.prompt'</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb2/"><p>2º Projeto/exercício - Armazenando dados do 'window.prompt'</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb3/"><p>3º Projeto/exercício - Cálculo de idade (não é usado data)</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb4/"><p>4º Projeto/exercício - Primeiro uso de array(dias de semana)</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb5/"><p>5º Projeto/exercício - Mostra as horas com interação por período</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb6/"><p>6º Projeto/exercício - Verifica gênero/idade e interage de acordo</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb7/"><p>7º Projeto/exercício - Contagem de passos (largada/destino/passos)</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb8/"><p>8º Projeto/exercício - Tabuada com quatros operações básicas(+ - / *)</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb9/"><p>9º Projeto/exercício - Analisador de números inseridos na caixa</p></a>
-<a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb10/"><p>10º Projeto/exercício - Calculadora de áreas (6 formas geometricas)</p></a>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb1/">1º Projeto/exercício - Usando 'window.prompt'</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb2/">2º Projeto/exercício - Armazenando dados do 'window.prompt'</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb3/">3º Projeto/exercício - Cálculo de idade (não é usado data)</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb4/">4º Projeto/exercício - Primeiro uso de array(dias de semana)</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb5/">5º Projeto/exercício - Mostra as horas com interação por período</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb6/">6º Projeto/exercício - Verifica gênero/idade e interage de acordo</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb7/">7º Projeto/exercício - Contagem de passos (largada/destino/passos)</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb8/">8º Projeto/exercício - Tabuada com quatros operações básicas(+ - / *)</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb9/">9º Projeto/exercício - Analisador de números inseridos na caixa</a></p>
+<p><a href="https://marcos-grando.github.io/JavaScript-CeV/Projetos-aulas/tb10/">10º Projeto/exercício - Calculadora de áreas (6 formas geometricas)</a></p>
 <br>
 
 
